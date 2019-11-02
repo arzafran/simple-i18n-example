@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
-import useTranslation from '../hooks/useTranslation'
-import LocaleSwitcher from './LocaleSwitcher'
+import React from "react"
+import Link from "next/link"
+import useTranslation from "../hooks/useTranslation"
+import LocaleSwitcher from "./LocaleSwitcher"
 
 const Navigation = () => {
   const { locale, t } = useTranslation()
@@ -12,12 +12,12 @@ const Navigation = () => {
       </li>
       <li>
         <Link href="/[lang]" as={`/${locale}`}>
-          <a>{t('painting')}</a>
+          <a>{t("painting")}</a>
         </Link>
       </li>
       <li>
         <Link href="/[lang]/artist" as={`/${locale}/artist`}>
-          <a>{t('artist')}</a>
+          <a>{t("artist")}</a>
         </Link>
       </li>
       <style jsx>{`
